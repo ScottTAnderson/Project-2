@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <title>Choose Your Own Adventure</title>
+
+</head>
+
+<body id="scoreboard">
+
+    <!--MAIN BODY-->
+    <div class="container" id="sb-container">
+        <div class="row">
+            <div class="col text-center mb-3">
+                <h1>SUPER STUDENTS</h1>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-around" id="subtitles">
+            <div id="scoreboard-rank" class="col ml-5 text-center">
+                <h3><u>RANK</u></h3>
+
+            </div>
+            <div id="scoreboard-name" class="col px-0 text-center">
+                <h3><u>NAME</u></h3>
+            </div>
+            <div id="scoreboard-score" class="col mr-5 text-center">
+                <h3><u>SCORE</u></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button id="reset-button" class="btn btn-danger border-white mb-3" type="button">Play Again</button>
+            <button id="changeUser-button" class="btn btn-danger border-white mb-3" type="button">Change User</button>
+        </div>
+    </div>
+    <!-- Begin Modal -->
+    <div id="questionModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title questionMsg"></h5>
+                </div>
+                <div class="modal-body">
+                    <p id="questionFlavor"></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="questionModalNext" type="button" class="btn btn-secondary close" data-dismiss="modal">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+        <script type="text/javascript" src="js/scoreboard.js"></script>
+</body>
+</html>
+
+
